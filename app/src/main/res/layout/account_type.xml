@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical" >
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:orientation="vertical" >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/doctorimg"
+                    android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                <android.support.v7.widget.AppCompatButton
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:id="@+id/btn_signup"
+                        android:background="@drawable/registerbtn_round"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="60dp"
+                        android:text="Register"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="10dp"
+                          android:text="Or"
+                          android:textSize="15dp"
+                          android:textColor="#58595B"
+                          android:layout_gravity="center"/>
+
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="already have an account?"
+                          android:textSize="15dp"
+                          android:textColor="#58595B"
+                          android:layout_gravity="center"/>
+
+                <android.support.v7.widget.AppCompatButton
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/loginbtn_round"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:id="@+id/btn_signin"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:text="Login"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/logo_round" />
+    </FrameLayout>
+
+</LinearLayout>

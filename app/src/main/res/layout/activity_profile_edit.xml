@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:id="@+id/eprofile_toolbar"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gradient">
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="Edit Profile"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colorWhite"
+                    android:id="@+id/rv1">
+        <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/updateProfile"
+                android:layout_centerInParent="true"
+                app:civ_border_width="2dp"
+                app:civ_shadow="true"
+                app:civ_shadow_radius="10"
+                app:civ_shadow_color="#454645"
+                app:civ_border_color="#FFFFFF"
+                android:src="@drawable/ic_person"/>
+
+        <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/eProfile_camera"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/ic_camera_blue"/>
+
+        </FrameLayout>
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+            android:id="@+id/eProfile_tab_layout"
+            android:layout_below="@+id/rv2"
+            app:tabMinWidth="100dp"
+            app:tabIndicatorHeight="4dp"
+            android:background="@color/colorWhite"
+            app:tabIndicatorColor="#00EAA8"
+            app:tabSelectedTextColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/eprofile_pager"
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

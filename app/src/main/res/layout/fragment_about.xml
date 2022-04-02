@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="fill_parent" >
+
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gradient">
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="About Us"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"/>
+        <ImageView
+                android:layout_width="18dp"
+                android:id="@+id/icon_sidemenu_about"
+                android:src="@drawable/ic_sidemenu"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="end"
+                android:layout_height="18dp" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <ImageView
+                android:src="@drawable/logo"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlack"
+                android:text="NUERO CRITICAL CARE SOCIETY OF INDIA"
+                android:textSize="15dp" />
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/about"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/about"
+                android:textSize="13dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

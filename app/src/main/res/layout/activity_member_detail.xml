@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:layout_width="fill_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="fill_parent">
+
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/member_toolbar"
+            android:background="@drawable/gradient">
+    </android.support.v7.widget.Toolbar>
+
+  <RelativeLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/gradient">
+
+      <RelativeLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/rv1">
+
+          <com.mikhaellopez.circularimageview.CircularImageView
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:id="@+id/image_dp"
+                  android:layout_centerInParent="true"
+                  app:civ_border_width="1dp"
+                  app:civ_border_color="#FFFFFF"
+                  android:src="@drawable/cam"/>
+
+          <ImageView
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:id="@+id/image_phone"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginRight="40dp"
+                  android:layout_toLeftOf="@+id/image_dp"
+                  android:src="@drawable/call"/>
+
+          <ImageView
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:id="@+id/image_message"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="40dp"
+                  android:layout_toRightOf="@+id/image_dp"
+                  android:src="@drawable/message"/>
+      </RelativeLayout>
+
+          <RelativeLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/rv2"
+                          android:layout_below="@+id/rv1">
+
+          <android.support.v7.widget.AppCompatTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_centerInParent="true"
+                  android:textColor="@color/colorWhite"
+                  android:textStyle="bold"
+                  android:id="@+id/member_name"
+                  android:textSize="20dp"
+                  android:text="Johnson"/>
+
+
+          </RelativeLayout>
+      <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/rv2"
+                    android:orientation="vertical">
+
+          <android.support.v7.widget.AppCompatTextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/colorWhite"
+                  android:id="@+id/memver_specicalist"
+                  android:textSize="15dp"
+                  android:text="Android"/>
+      </LinearLayout>
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_below="@+id/rv2"
+            android:layout_marginTop="20dp"
+            app:tabSelectedTextColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+  </RelativeLayout>
+    <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

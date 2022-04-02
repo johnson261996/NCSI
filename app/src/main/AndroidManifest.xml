@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.exarcplus.nsci">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+
+            android:hardwareAccelerated="true"
+            android:icon="@mipmap/launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/logo_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+        <activity android:name=".UpcomingEvent"
+                  android:theme="@style/AppTheme.Member">
+        </activity>
+        <activity
+                android:name=".LauncherScreen"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".AccountType"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.AccountType">
+        </activity>
+        <activity
+                android:name=".SignupActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".LoginActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".ForgotActivity"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme"
+                android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+                android:name=".MemberDetail"
+                android:theme="@style/AppTheme.Member">
+        </activity>
+        <activity
+                android:name=".ProfileEdit">
+        </activity>
+
+        <activity android:name=".CompletedEvent"
+                  android:theme="@style/AppTheme.Member">
+        </activity>
+
+        <activity android:name=".OngoingEvent"
+                  android:theme="@style/AppTheme.Member">
+        </activity>
+
+        <activity android:name=".GalleryImages_Activity"
+                  android:theme="@style/AppTheme.Member">
+        </activity>
+    </application>
+
+</manifest>

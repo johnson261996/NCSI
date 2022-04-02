@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="fill_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="fill_parent">
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/gradient">
+
+        <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:text="Profile"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"/>
+        <ImageView
+                android:layout_width="18dp"
+                android:id="@+id/icon_sidemenu_profile"
+                android:src="@drawable/ic_sidemenu"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="end"
+                android:layout_height="18dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv1">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/Profile_image_dp"
+            android:layout_centerInParent="true"
+            app:civ_border_width="2dp"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="#454645"
+            app:civ_border_color="#FFFFFF"
+            android:src="@drawable/ic_person"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv2"
+        android:layout_below="@+id/rv1">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Profile_member_name"
+            android:textSize="20dp"
+            android:text="Johnson"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:layout_below="@+id/Profile_member_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/profile_specicalist"
+            android:textSize="15dp"
+            android:text="Android"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/username_icon"
+            android:src="@drawable/ic_edit"
+            android:layout_toLeftOf="@+id/profile_edit"
+            android:layout_width="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="15dp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#04AED6"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/profile_edit"
+            android:textSize="10dp"
+            android:text="EDIT PROFILE"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/Profile_tab_layout"
+        android:layout_below="@+id/rv2"
+        app:tabMinWidth="100dp"
+        app:tabIndicatorHeight="4dp"
+        app:tabIndicatorColor="#00EAA8"
+        app:tabSelectedTextColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/profile_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

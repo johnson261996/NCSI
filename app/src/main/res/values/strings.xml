@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">NSCI</string>
+    <string name="app_bottomtitle">POWERED BY EXARCPLUS</string>
+    <string name="select_committe">select committe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="thought">\n \"Infuse your life with action. Don\'t wait for it to happen. Make it happen. Make your
+        own future. Make your own hope. Make your own love.\"\n
+    </string>
+    <string name="about">Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi.
+    </string>
+    <string name="vision">Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi.
+    </string>
+    <string name="mission">\u2022 Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet,
+        \n\u2022Lorem ipsum dolor sit amet, consectetur
+        \n\u2022Lorem ipsum dolor sit amet, consectetur
+    </string>
+    <string name="future_plans">Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi.
+    </string>
+
+    <string-array name="spinner_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+    </string-array>
+</resources>
